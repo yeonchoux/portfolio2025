@@ -29,7 +29,7 @@ Spring MVC 기반으로 제작한 쇼핑몰 예제 프로젝트입니다.
 ![Shop Page](./images/shop.PNG)
 
 Q&A 게시판  
-![QnA Page](./images/Q&A.PNG)
+![QnA Page](./images/QnA.PNG)
 
 ## 💡 배운 점
 - MVC 패턴을 적용해 **뷰와 로직을 분리**하는 방법 학습
