@@ -45,16 +45,15 @@
 <body>
     <div class="container py-5">
         <div class="detail-container">
-            <!-- 상품 이미지 -->
+
             <img src="${clothes.imagePath}" alt="${clothes.name}" class="img-fluid rounded shadow mb-2">
 
-            <!-- 상품명 -->
             <h3>${clothes.name}</h3>
 
-            <!-- 가격 -->
+
             <p>${clothes.price}원</p>
 
-            <!-- 버튼 -->
+
             <a href="/clothes/list" class="btn btn-dark mt-2">목록으로</a>
         </div>
     </div>

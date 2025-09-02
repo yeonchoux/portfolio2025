@@ -6,14 +6,13 @@
 
 <mapper namespace="com.suyeon.shopProject.member.MemberMapper">
 
-<!--회원 가입-->
 	<insert id="insertMember" parameterType="com.suyeon.shopProject.member.MemberDTO">
 	INSERT INTO member
 	(email, password, birth, address)
 	VALUES(#{email},#{password},#{birth},#{address});
 	</insert>
 	
-	<!--이메일로 회원 찾기-->
+
 	<select id="findByMember" parameterType="String" resultType="com.suyeon.shopProject.member.MemberDTO">
 	SELECT *
 	FROM member

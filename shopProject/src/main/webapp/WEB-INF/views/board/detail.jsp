@@ -13,12 +13,11 @@
 <body>
 <div class="container mt-5">
 
-    <!-- 게시글 영역 -->
     <div class="card shadow-sm mb-4">
         <div class="card-body">
             <div class="d-flex justify-content-between align-items-center">
                 <h4 class="card-title mb-0">${board.name}님의 글</h4>
-                <!-- 삭제 버튼 -->
+
                 <form action="/board/delete/${board.id}" method="post" onsubmit="return confirm('삭제하시겠습니까?');">
                     <button type="submit" class="btn btn-sm btn-danger">삭제</button>
                 </form>
@@ -32,7 +31,7 @@
         </div>
     </div>
 
-    <!-- 댓글 목록 -->
+
     <h5 class="fw-bold mb-3">댓글</h5>
     <c:if test="${empty commentList}">
         <p class="text-muted">아직 댓글이 없습니다.</p>
@@ -44,7 +43,7 @@
         </div>
     </c:forEach>
 
-    <!-- 댓글 작성 폼 -->
+ 
     <div class="mt-4">
         <form action="/comment/create" method="post">
             <input type="hidden" name="boardId" value="${board.id}">
@@ -58,7 +57,7 @@
         </form>
     </div>
 
-    <!-- 목록으로 돌아가기 버튼 -->
+ 
     <div class="mt-4">
         <a href="/board/list" class="btn btn-outline-secondary btn-sm">목록으로</a>
     </div>
