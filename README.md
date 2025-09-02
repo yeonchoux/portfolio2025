@@ -20,16 +20,16 @@ Spring MVC 기반으로 제작한 쇼핑몰 예제 프로젝트입니다.
 
 ## 실행 화면
 메인 페이지  
-![Main Page](./images/main.png)
+![Main Page](./images/main.PNG)
 
 회원가입 페이지  
-![Sign-up Page](./images/signup.png)
+![Sign-up Page](./images/signup.PNG)
 
 상품 페이지  
-![Shop Page](./images/shop.png)
+![Shop Page](./images/shop.PNG)
 
 Q&A 게시판  
-![QnA Page](./images/qna.png)
+![QnA Page](./images/Q&A.PNG)
 
 ## 💡 배운 점
 - MVC 패턴을 적용해 **뷰와 로직을 분리**하는 방법 학습
