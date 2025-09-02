@@ -20,7 +20,7 @@ Spring MVC 기반으로 제작한 쇼핑몰 예제 프로젝트입니다.
 
 ## 실행 화면
 메인 페이지  
-![Main Page](./images/Main Page.PNG)
+![Main Page](./images/main.png)
 
 회원가입 페이지  
 ![Sign-up Page](./images/signup.png)
