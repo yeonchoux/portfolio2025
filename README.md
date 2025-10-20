@@ -11,7 +11,7 @@ Spring MVC 기반으로 제작한 쇼핑몰 예제 프로젝트입니다.
 - **언어**: Java, JSP
 - **버전 관리**: Git/GitHub
 
-##주요 기능
+## 주요 기능
 - **메인(Main)**: 기본 화면 구성
 - **회원가입(Sign-up) / 로그인 / 로그아웃**
 - **마이페이지(My Page)**: 회원 정보 확인 및 관리
@@ -20,16 +20,16 @@ Spring MVC 기반으로 제작한 쇼핑몰 예제 프로젝트입니다.
 
 ## 실행 화면
 메인 페이지  
-![Main Page](./images/Main Page.PNG)
+![Main Page](./images/main.PNG)
 
 회원가입 페이지  
-![Sign-up Page](./images/signup.png)
+![Sign-up Page](./images/signup.PNG)
 
 상품 페이지  
-![Shop Page](./images/shop.png)
+![Shop Page](./images/shop.PNG)
 
 Q&A 게시판  
-![QnA Page](./images/qna.png)
+![QnA Page](./images/QnA.PNG)
 
 ## 💡 배운 점
 - MVC 패턴을 적용해 **뷰와 로직을 분리**하는 방법 학습
