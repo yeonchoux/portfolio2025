@@ -7,7 +7,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Board List</title>
+    <title>큐앤에이 리스트 페이지</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
