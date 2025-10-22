@@ -29,18 +29,31 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="board" items="${boardList}">
-            <tr>
-                <td>${board.id}</td>
-                <td>${board.name}</td>
-                <td class="text-start">
-                    <a href="/board/detail/${board.id}" class="text-decoration-none text-dark">
+        
+		<c:choose>
+			<c:when test="${not empty boardList}">
+        		<c:forEach var="board" items="${boardList}">
+           		 <tr>
+                	<td>${board.id}</td>
+                	<td>${board.name}</td>
+                	<td class="text-start">
+                    	<a href="/board/detail/${board.id}" class="text-decoration-none text-dark">
                         ${board.content}
-                    </a>
-                </td>
-                <td><fmt:formatDate value="${board.createdAt}" pattern="yyyy-MM-dd HH:mm"/></td>
-            </tr>
-        </c:forEach>
+                    	</a>
+                	</td>
+                	<td><fmt:formatDate value="${board.createdAt}" pattern="yyyy-MM-dd HH:mm"/></td>
+            	</tr>
+        		</c:forEach>
+        	</c:when>
+        	<c:otherwise>
+        		<tr>
+        			<td colspan="4" class="text-center text-muted">
+        			현재 게시글이 없습니다.
+        			</td>
+        		</tr>
+        	</c:otherwise>
+        </c:choose>
+        
         </tbody>
     </table>
 </div>
