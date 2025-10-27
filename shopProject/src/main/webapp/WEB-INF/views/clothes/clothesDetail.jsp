@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ include file="/WEB-INF/views/common/header.jsp" %>
 
@@ -30,14 +31,21 @@
             object-fit: contain;
         }
 		
+		.btn-custom-height {
+   			height: 38px; 
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    	}
+    
 		.btn-dark {
-		background-color: #111;
-		border: none;
-		border-radius: 8px;
+			background-color: #111;
+			border: none;
+			border-radius: 8px;
 		}
 
 		.btn-dark:hover {
-		background-color: #333;
+			background-color: #333;
 		}
 		
     </style>
@@ -50,9 +58,16 @@
             <img src="${clothes.imagePath}" alt="${clothes.name}" class="img-fluid rounded shadow mb-2">
 
             <h3>${clothes.name}</h3>
+            <p><fmt:formatNumber value="${clothes.price}" type="number" groupingUsed="true"/>원</p>
 
-
-            <p>${clothes.price}원</p>
+	<div class="d-flex justify-content-center gap-2 align-items-stretch">
+    	<a href="/clothes/${clothes.id}" class="btn btn-sm btn-outline-dark btn-custom-height">보기</a>
+    	<form action="/cart/add" method="post" class="d-inline">
+        	<input type="hidden" name="productId" value="${clothes.id}">
+        	<input type="hidden" name="quantity" value="1">
+        	<button type="submit" class="btn btn-sm btn-outline-success btn-custom-height">장바구니</button>
+    	</form>
+	</div>
 
 
             <a href="/clothes/list" class="btn btn-dark mt-2">목록으로</a>

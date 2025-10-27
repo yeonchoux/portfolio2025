@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.suyeon.shopProject.cart.CartMapper">
+
+<select id="findAll"  parameterType="int" resultType="com.suyeon.shopProject.cart.CartDTO">
+	SELECT cart_id, product_id, quantity
+ 	FROM cart
+ 	WHERE user_id = #{id}
+</select>
+
+<insert id="addInCart" parameterType="com.suyeon.shopProject.cart.CartDTO">
+	INSERT INTO cart
+		(user_id, cart_id, product_id, quantity)
+		VALUES(#{userId}, #{cartId}, #{productId}, #{quantity})
+</insert>
+
+<delete id="deleteItem" parameterType="int">
+	DELETE 
+	FROM cart
+	WHERE cart_id = #{cartId};
+</delete>
+
+
+</mapper> 
+

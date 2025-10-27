@@ -1,11 +1,20 @@
 package com.suyeon.shopProject.cart;
 
 public class CartDTO {
-	
+	 
 	int cartId;
 	int userId;
 	int productId;
 	int quantity;
+	int price;
+	
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
 	public int getCartId() {
 		return cartId;
 	}

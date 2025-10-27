@@ -16,6 +16,7 @@
 		<li><a href="/member/signup" class="nav-link px-2 text-white">Sign-up</a></li>
 		<li><a href="/member/mypage" class="nav-link px-2 text-white">My Page</a></li>
         <li><a href="/clothes/list" class="nav-link px-2 text-white">Shop</a></li>
+        <li><a href="/cart/cartList" class="nav-link px-2 text-white">Cart</a></li>
         <li><a href="/board/list" class="nav-link px-2 text-white">Q&A</a></li>
       </ul>
     </div>

@@ -23,6 +23,7 @@
 		(name, content, created_at, comment)
 		VALUES(#{name}, #{content}, now(), #{comment})
 </insert>
+
 <delete id="deleteBoard" parameterType="int">
 	DELETE 
 	FROM board

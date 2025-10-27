@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
         <%@ include file="/WEB-INF/views/common/header.jsp" %>
 
@@ -42,10 +43,11 @@
                                     <img src="${clothes.imagePath}" class="card-img-top" alt="${clothes.name}">
                                     <div class="card-body text-center">
                                         <p class="card-text">${clothes.name}</p>
-                                        <p class="text-muted small">${clothes.price}원</p>
+                                        <p class="text-muted small"><fmt:formatNumber value="${clothes.price}" type="number" groupingUsed="true"/>원</p>
                                         <div class="d-flex justify-content-center">
                                             <a href="/clothes/${clothes.id}"
                                                 class="btn btn-sm btn-outline-dark">View</a>
+                                                
                                         </div>
                                     </div>
                                 </div>
