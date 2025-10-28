@@ -9,13 +9,14 @@ Spring MVC 기반으로 제작한 쇼핑몰 예제 프로젝트입니다.
 - **DB 관리 툴**: DBeaver
 - **DBMS**: MySQL
 - **언어**: Java, JSP
-- **버전 관리**: Git/GitHub
+- **버전 관리**: Git/GitHub/Sourcetree
 
 ## 주요 기능
 - **메인(Main)**: 기본 화면 구성
 - **회원가입(Sign-up) / 로그인 / 로그아웃**
 - **마이페이지(My Page)**: 회원 정보 확인 및 관리
 - **상품 페이지(Shop)**: 상품 목록 및 상세보기
+- **장바구니 페이지(Cart)** : 로그인 후 상품 담기
 - **Q&A 게시판**: 게시글 작성/수정/삭제 + 댓글 기능 구현
 
 ## 실행 화면
@@ -25,16 +26,28 @@ Spring MVC 기반으로 제작한 쇼핑몰 예제 프로젝트입니다.
 회원가입 페이지  
 ![Sign-up Page](./images/signup.PNG)
 
-상품 페이지  
-![Shop Page](./images/shop.PNG)
+상품 페이지 (1)  
+![Shop Page](./images/shop1.PNG)
 
-Q&A 게시판  
-![QnA Page](./images/QnA.PNG)
+상품 페이지 (2)
+![Shop Page](./images/shop2.PNG)
+
+장바구니 페이지 (1)
+![Cart Page](./images/cart1.PNG)
+
+장바구니 페이지 (2)
+![Cart Page](./images/cart2.PNG)
+
+Q&A 게시판  (1)
+![QnA Page](./images/qna1.PNG)
+
+Q&A 게시판  (2)
+![QnA Page](./images/qna2.PNG)
+
 
 ## 💡 배운 점
 - MVC 패턴을 적용해 **뷰와 로직을 분리**하는 방법 학습
 - MySQL + DBeaver를 활용해 **DB 연동 및 CRUD 처리** 경험
 - Q&A 게시판 댓글 구현을 통해 **관계형 데이터 설계와 처리 로직** 이해
-- **GPT를 활용해 문제 해결 아이디어와 다양한 코드 접근 방식**을 검토 →  
-  혼자 공부했지만 협업하듯 사고를 확장할 수 있었음
+- **GPT를 활용해 에러 문제 해결**을 검토 
 - GitHub에 프로젝트를 업로드하며 **버전 관리와 프로젝트 공유 경험** 습득
