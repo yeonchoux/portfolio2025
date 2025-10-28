@@ -21,28 +21,28 @@ Spring MVC 기반으로 제작한 쇼핑몰 예제 프로젝트입니다.
 
 ## 실행 화면
 메인 페이지  
-![Main Page](./images/main.PNG)
+![Main Page](./images/main.JPG)
 
 회원가입 페이지  
-![Sign-up Page](./images/signup.PNG)
+![Sign-up Page](./images/signup.JPG)
 
 상품 페이지 (1)  
-![Shop Page](./images/shop1.PNG)
+![Shop Page](./images/shop1.JPG)
 
 상품 페이지 (2)
-![Shop Page](./images/shop2.PNG)
+![Shop Page](./images/shop2.JPG)
 
 장바구니 페이지 (1)
-![Cart Page](./images/cart1.PNG)
+![Cart Page](./images/cart1.JPG)
 
 장바구니 페이지 (2)
-![Cart Page](./images/cart2.PNG)
+![Cart Page](./images/cart2.JPG)
 
 Q&A 게시판  (1)
-![QnA Page](./images/qna1.PNG)
+![QnA Page](./images/qna1.JPG)
 
 Q&A 게시판  (2)
-![QnA Page](./images/qna2.PNG)
+![QnA Page](./images/qna2.JPG)
 
 
 ## 💡 배운 점
