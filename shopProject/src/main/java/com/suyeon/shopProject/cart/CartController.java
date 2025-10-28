@@ -33,12 +33,18 @@ public class CartController {
 		
 
 		MemberDTO member =(MemberDTO)session.getAttribute("loginUser");
+		if (member == null) {
+			session.setAttribute("targeturl", "redirect:/cart/cartList");
+			return "member/login";
+		}
+		
 		int id = member.getId();
 		
 		List<CartDTO> cartList = cartSerivce.findAll(id);
 		model.addAttribute("cartList", cartList);
 		return "cart/cartList";
 	}
+
 	
 	@PostMapping("/add")
 	public String cartAdd(CartDTO cartDTO, HttpSession session) {

@@ -43,6 +43,13 @@ public class MemberController {
 		
 		if (member != null && member.getPassword().equals(password)) {
 			session.setAttribute("loginUser", member);
+			String targeturl = (String)session.getAttribute("targeturl");
+			
+			if (targeturl != null) {
+				session.removeAttribute("targeturl");
+				return targeturl;
+			}
+			
 			return "redirect:/member/mypage";
 		} else {
 			model.addAttribute("error", "이메일 혹은 비밀번호가 일치하지 않습니다.");
